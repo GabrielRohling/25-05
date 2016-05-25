@@ -1,4 +1,4 @@
-package br.edu.unidavi.bsn.servlests.caio;
+package br.edu.unidavi.bsn.servlets.caio;
 
 import java.io.IOException;
 import java.io.PrintWriter;
