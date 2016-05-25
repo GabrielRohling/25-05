@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "GravarCookie", urlPatterns = {"/GravarCookieGabriel"})
+@WebServlet(name = "GravarCookieGabriel", urlPatterns = {"/GravarCookieGabriel"})
 public class GravarCookieGabriel extends HttpServlet {
 
     @Override
