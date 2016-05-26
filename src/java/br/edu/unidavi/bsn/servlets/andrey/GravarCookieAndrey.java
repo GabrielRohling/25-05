@@ -30,6 +30,7 @@ public class GravarCookieAndrey extends HttpServlet {
             out.println("<input type=\"text\" name=\"valor\" />");
             out.println("<input type=\"submit\" value=\"Gravar\"/>");
             out.println("</form>");
+            out.println("<input type=\"submit\" value=\"Remover\"/>");
 
             Cookie[] requestCookies = request.getCookies();
 

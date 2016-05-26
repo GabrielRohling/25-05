@@ -30,7 +30,11 @@ public class GravarCookieCaio extends HttpServlet {
             out.println("<input type=\"text\" name=\"nome\" />");
             out.println("<input type=\"text\" name=\"valor\" />");
             out.println("<input type=\"submit\" value=\"Gravar\"/>");
+            out.println("<input type=\"submit\" value=\"Remover\"/>");
             out.println("</form>");
+       
+            
+
 
             Cookie[] requestCookies = request.getCookies();
 
