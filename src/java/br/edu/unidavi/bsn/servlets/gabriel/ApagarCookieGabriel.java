@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "GravarCookieGabriel", urlPatterns = {"/GravarCookieGabriel"})
-public class GravarCookieGabriel extends HttpServlet {
+@WebServlet(name = "ApagarCookieGabriel", urlPatterns = {"/ApagarCookieGabriel"})
+public class ApagarCookieGabriel extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -30,12 +30,6 @@ public class GravarCookieGabriel extends HttpServlet {
             out.println("<input type=\"text\" name=\"nome\" />");
             out.println("<input type=\"text\" name=\"valor\" />");
             out.println("<input type=\"submit\" value=\"Gravar\"/>");
-            out.println("</form>");
- 
-            out.println("<form method=\"post\">");
-            out.println("<input type=\"text\" name=\"nome\" />");
-            out.println("<input type=\"text\" name=\"valor\" />");
-            out.println("<input type=\"submit\" value=\"Remover\"/>");
             out.println("</form>");
 
             Cookie[] requestCookies = request.getCookies();
@@ -59,7 +53,7 @@ public class GravarCookieGabriel extends HttpServlet {
             throws ServletException, IOException {
 
         Cookie cookie = new Cookie(request.getParameter("nome"), request.getParameter("valor"));
-        cookie.setMaxAge(60 * 60); //1 hour
+        cookie.setMaxAge(0 * 0); //1 hour
         response.addCookie(cookie);
 
         response.sendRedirect("GravarCookie");
